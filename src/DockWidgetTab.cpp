@@ -259,6 +259,7 @@ void DockWidgetTabPrivate::createLayout()
 
 
 	CloseButton = createCloseButton();
+    CloseButton->setFixedSize(30, 30);
 	CloseButton->setObjectName("tabCloseButton");
 	internal::setButtonIcon(CloseButton, QStyle::SP_TitleBarCloseButton, TabCloseIcon);
     CloseButton->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
